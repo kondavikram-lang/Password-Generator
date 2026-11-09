@@ -1,0 +1,6 @@
+{
+  "name": "SecurePass",
+  "description": "Cryptographically secure password generator, strength analysis, and configuration audit history powered by Supabase authentication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

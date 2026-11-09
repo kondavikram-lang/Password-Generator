@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #0b0f19;
+    --surface-1: #111827;
+    --surface-2: #1c1f2a;
+    --surface-elevated: #1e1b4b;
+    --primary-indigo: #6366f1;
+    --electric-violet: #818cf8;
+    --shield-emerald: #10b981;
+    --amber-caution: #f59e0b;
+    --rose-hazard: #f43f5e;
+  }
+
+  body {
+    background-color: #0b0f19;
+    color: #dfe2f1;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom cyber slider styling */
+input[type="range"].cyber-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #1e1b4b;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"].cyber-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #6366f1;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"].cyber-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 18px rgba(129, 140, 248, 0.85);
+}
+
+input[type="range"].cyber-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #6366f1;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(129, 140, 248, 0.2);
+}
+
+.glass-panel-elevated {
+  background: rgba(30, 27, 75, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  box-shadow: 0 12px 32px -8px rgba(99, 102, 241, 0.25);
+}
+
+.recessed-well {
+  background: #070a10;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
